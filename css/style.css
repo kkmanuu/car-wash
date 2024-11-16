@@ -70,6 +70,26 @@ section{
     position: relative;
     overflow: hidden;
 }
+/* Remove margin and padding from the body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body takes full height */
+}
+
+/* Apply styles to the background container */
+.background-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+    display: flex; /* For aligning content inside if necessary */
+    justify-content: center; /* Example: center content horizontally */
+    align-items: center; /* Example: center content vertically */
+}
+
 .background-video {
     position: absolute;
     top: 0;
